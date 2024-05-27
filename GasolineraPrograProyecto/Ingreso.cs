@@ -37,28 +37,21 @@ namespace GasolineraPrograProyecto
             if (rdbprepago.Checked)
             {
                 dato.Tipogasolina = "Prepago";
+                dato.CantidadPedida = decimal.Parse(Interaction.InputBox("Ingrese la cantidad en Q "));
             }
             else if (rdbprepagolleno.Checked)
             {
                 dato.Tipogasolina = "PrepagoLleno";
-                dato.CantidadPedida = decimal.Parse(Interaction.InputBox("Ingrese la cantidad en Q "));
+                
             }
             datos.Add(dato);
-            //GuardadoDatos();
-            GuardadoDatosSD();
+            GuardadoDatos();
         }
         void GuardadoDatos()
         {
             string DatosGuardar = JsonConvert.SerializeObject(datos);
-            string Archivo = "Datos.json";
+            string Archivo = @"C:\Users\kenri\OneDrive\Desktop\Proyecto\GasolineraPrograProyecto\bin\Debug\Datos.json";
             System.IO.File.WriteAllText(Archivo, DatosGuardar);
-        }
-        void GuardadoDatosSD()
-        {
-            FileStream stream = new FileStream("Datos.json", FileMode.OpenOrCreate, FileAccess.Write);
-            StreamWriter writer = new StreamWriter(stream);
-            writer.WriteLine(datos);
-            writer.Close();
         }
     }
 }
