@@ -33,7 +33,14 @@ namespace GasolineraPrograProyecto
             dato.Nit = txtNit.Text;
             dato.Nombre = txtNombre.Text;
             dato.Fecha = dateTimeHora.Value;
-            dato.Tipogasolina = cmbGasolina.SelectedIndex.ToString();
+            if (rbDiesel.Checked)
+            {
+                dato.Opcion = "Diesel";
+            }
+            else if (rbSuper.Checked)
+            {
+                dato.Opcion = "Super";
+            }
             if (rdbprepago.Checked)
             {
                 dato.Tipogasolina = "Prepago";
@@ -52,6 +59,13 @@ namespace GasolineraPrograProyecto
             string DatosGuardar = JsonConvert.SerializeObject(datos);
             string Archivo = @"C:\Users\Julian Vg\source\repos\GasolineraPrograProyecto\GasolineraPrograProyecto\bin\Debug\Datos.json";
             System.IO.File.WriteAllText(Archivo, DatosGuardar);
+        }
+        void limpieza()
+        {
+            txtNit.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+
+            txtNit.Focus();
         }
     }
 }
