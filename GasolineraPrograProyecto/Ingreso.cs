@@ -50,7 +50,7 @@ namespace GasolineraPrograProyecto
         void GuardadoDatos()
         {
             string DatosGuardar = JsonConvert.SerializeObject(datos);
-            string Archivo = @"C:\Users\kenri\OneDrive\Desktop\Proyecto\GasolineraPrograProyecto\bin\Debug\Datos.json";
+            string Archivo = @"C:\Users\Julian Vg\source\repos\GasolineraPrograProyecto\GasolineraPrograProyecto\bin\Debug\Datos.json";
             System.IO.File.WriteAllText(Archivo, DatosGuardar);
         }
     }
