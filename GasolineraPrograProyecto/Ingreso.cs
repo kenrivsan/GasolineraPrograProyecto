@@ -33,7 +33,15 @@ namespace GasolineraPrograProyecto
             dato.Nit = txtNit.Text;
             dato.Nombre = txtNombre.Text;
             dato.Fecha = dateTimeHora.Value;
-            dato.Tipogasolina = cmbGasolina.SelectedIndex.ToString();
+            if (rdDiesel.Checked)
+            {
+                dato.Opcion = "Diesel";
+            }
+            else if (rdSuper.Checked)
+            {
+                dato.Opcion = "Super";
+
+            }
             if (rdbprepago.Checked)
             {
                 dato.Tipogasolina = "Prepago";
