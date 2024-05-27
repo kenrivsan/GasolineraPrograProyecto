@@ -54,12 +54,20 @@ namespace GasolineraPrograProyecto
             }
             datos.Add(dato);
             GuardadoDatos();
+            limpieza();
         }
         void GuardadoDatos()
         {
             string DatosGuardar = JsonConvert.SerializeObject(datos);
             string Archivo = @"C:\Users\kenri\OneDrive\Desktop\Proyecto\GasolineraPrograProyecto\bin\Debug\Datos.json";
             System.IO.File.WriteAllText(Archivo, DatosGuardar);
+        }
+        void limpieza()
+        {
+            txtNit.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            dateTimeHora.Value = DateTime.Now;
+            
         }
     }
 }
