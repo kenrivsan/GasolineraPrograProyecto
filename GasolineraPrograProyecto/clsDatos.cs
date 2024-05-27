@@ -13,15 +13,15 @@ namespace GasolineraPrograProyecto
         DateTime fecha;
         string opcion;
         string tipogasolina;
-        double cantidadServida;
-        double cantidadPedida;
+        decimal cantidadServida;
+        decimal cantidadPedida;
 
         public string Nit { get => nit; set => nit = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public DateTime Fecha { get => fecha; set => fecha = value; }
         public string Opcion { get => opcion; set => opcion = value; }
         public string Tipogasolina { get => tipogasolina; set => tipogasolina = value; }
-        public double CantidadServida { get => cantidadServida; set => cantidadServida = value; }
-        public double CantidadPedida { get => cantidadPedida; set => cantidadPedida = value; }
+        public decimal CantidadServida { get => cantidadServida; set => cantidadServida = value; }
+        public decimal CantidadPedida { get => cantidadPedida; set => cantidadPedida = value; }
     }
 }
