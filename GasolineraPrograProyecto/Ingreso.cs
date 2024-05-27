@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using Microsoft.VisualBasic;
+using System.IO;
 
 namespace GasolineraPrograProyecto
 {   
@@ -39,16 +41,24 @@ namespace GasolineraPrograProyecto
             else if (rdbprepagolleno.Checked)
             {
                 dato.Tipogasolina = "PrepagoLleno";
+                dato.CantidadPedida = decimal.Parse(Interaction.InputBox("Ingrese la cantidad en Q "));
             }
             datos.Add(dato);
-            GuardadoDatos();
-
+            //GuardadoDatos();
+            GuardadoDatosSD();
         }
         void GuardadoDatos()
         {
             string DatosGuardar = JsonConvert.SerializeObject(datos);
             string Archivo = "Datos.json";
             System.IO.File.WriteAllText(Archivo, DatosGuardar);
+        }
+        void GuardadoDatosSD()
+        {
+            FileStream stream = new FileStream("Datos.json", FileMode.OpenOrCreate, FileAccess.Write);
+            StreamWriter writer = new StreamWriter(stream);
+            writer.WriteLine(datos);
+            writer.Close();
         }
     }
 }
