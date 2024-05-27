@@ -33,32 +33,40 @@ namespace GasolineraPrograProyecto
             dato.Nit = txtNit.Text;
             dato.Nombre = txtNombre.Text;
             dato.Fecha = dateTimeHora.Value;
-            dato.Tipogasolina = cmbGasolina.SelectedIndex.ToString();
+            if (rdSuper.Checked)
+            {
+                dato.Opcion = "Super";
+            }
+            else if (rdDiesel.Checked)
+            {
+                dato.Opcion = "Diesel";
+
+            }
             if (rdbprepago.Checked)
             {
                 dato.Tipogasolina = "Prepago";
+                dato.CantidadPedida = decimal.Parse(Interaction.InputBox("Ingrese la cantidad en Q "));
             }
             else if (rdbprepagolleno.Checked)
             {
                 dato.Tipogasolina = "PrepagoLleno";
-                dato.CantidadPedida = decimal.Parse(Interaction.InputBox("Ingrese la cantidad en Q "));
+                
             }
             datos.Add(dato);
-            //GuardadoDatos();
-            GuardadoDatosSD();
+            GuardadoDatos();
+            limpieza();
         }
         void GuardadoDatos()
         {
             string DatosGuardar = JsonConvert.SerializeObject(datos);
-            string Archivo = "Datos.json";
+            string Archivo = @"C:\Users\kenri\OneDrive\Desktop\Proyecto\GasolineraPrograProyecto\bin\Debug\Datos.json";
             System.IO.File.WriteAllText(Archivo, DatosGuardar);
         }
-        void GuardadoDatosSD()
+        void limpieza()
         {
-            FileStream stream = new FileStream("Datos.json", FileMode.OpenOrCreate, FileAccess.Write);
-            StreamWriter writer = new StreamWriter(stream);
-            writer.WriteLine(datos);
-            writer.Close();
+           txtNit.Text = string.Empty;
+           txtNombre.Text = string.Empty;
+           dateTimeHora.Value = DateTime.Now;
         }
     }
 }
