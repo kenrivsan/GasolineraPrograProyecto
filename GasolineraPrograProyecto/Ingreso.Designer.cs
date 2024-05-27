@@ -143,7 +143,7 @@
             // 
             // btnPanel
             // 
-            this.btnPanel.Location = new System.Drawing.Point(395, 315);
+            this.btnPanel.Location = new System.Drawing.Point(395, 12);
             this.btnPanel.Name = "btnPanel";
             this.btnPanel.Size = new System.Drawing.Size(75, 39);
             this.btnPanel.TabIndex = 23;
