@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Newtonsoft.Json;
 using Microsoft.VisualBasic;
 using System.IO;
+using System.IO.Ports;
 
 namespace GasolineraPrograProyecto
 {   
@@ -17,9 +18,11 @@ namespace GasolineraPrograProyecto
     public partial class Ingreso : Form
     {
         List<clsDatos> datos = new List<clsDatos>();
+        SerialPort serialPort;
         public Ingreso()
         {
             InitializeComponent();
+            serialPort = new SerialPort("COM5", 9600);
         }
 
         private void btnPanel_Click(object sender, EventArgs e)
@@ -53,12 +56,29 @@ namespace GasolineraPrograProyecto
             }
             datos.Add(dato);
             GuardadoDatos();
+            EnviarDatosPorSerial(dato);
         }
         void GuardadoDatos()
         {
             string DatosGuardar = JsonConvert.SerializeObject(datos);
             string Archivo = @"C:\Users\Julian Vg\source\repos\GasolineraPrograProyecto\GasolineraPrograProyecto\bin\Debug\Datos.json";
             System.IO.File.WriteAllText(Archivo, DatosGuardar);
+        }
+
+        void EnviarDatosPorSerial(clsDatos dato)
+        {
+            try
+            {
+                serialPort.Open();
+                string jsonData = JsonConvert.SerializeObject(dato);
+                serialPort.WriteLine(jsonData);
+                serialPort.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al enviar datos: " + ex.Message);
+            }
+
         }
         void limpieza()
         {
