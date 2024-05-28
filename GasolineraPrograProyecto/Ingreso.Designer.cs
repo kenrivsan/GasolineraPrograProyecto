@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rdbprepago = new System.Windows.Forms.RadioButton();
             this.rdbprepagolleno = new System.Windows.Forms.RadioButton();
@@ -46,6 +47,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rbDiesel = new System.Windows.Forms.RadioButton();
             this.rbSuper = new System.Windows.Forms.RadioButton();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -54,18 +56,21 @@
             // 
             this.groupBox1.Controls.Add(this.rdbprepago);
             this.groupBox1.Controls.Add(this.rdbprepagolleno);
-            this.groupBox1.Location = new System.Drawing.Point(30, 281);
+            this.groupBox1.Location = new System.Drawing.Point(40, 346);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(116, 54);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(155, 66);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             // 
             // rdbprepago
             // 
             this.rdbprepago.AutoSize = true;
-            this.rdbprepago.Location = new System.Drawing.Point(6, 9);
+            this.rdbprepago.Location = new System.Drawing.Point(8, 11);
+            this.rdbprepago.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbprepago.Name = "rdbprepago";
-            this.rdbprepago.Size = new System.Drawing.Size(69, 17);
+            this.rdbprepago.Size = new System.Drawing.Size(86, 20);
             this.rdbprepago.TabIndex = 13;
             this.rdbprepago.TabStop = true;
             this.rdbprepago.Text = "Pre-Pago";
@@ -74,9 +79,10 @@
             // rdbprepagolleno
             // 
             this.rdbprepagolleno.AutoSize = true;
-            this.rdbprepagolleno.Location = new System.Drawing.Point(6, 32);
+            this.rdbprepagolleno.Location = new System.Drawing.Point(8, 39);
+            this.rdbprepagolleno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdbprepagolleno.Name = "rdbprepagolleno";
-            this.rdbprepagolleno.Size = new System.Drawing.Size(91, 17);
+            this.rdbprepagolleno.Size = new System.Drawing.Size(111, 20);
             this.rdbprepagolleno.TabIndex = 14;
             this.rdbprepagolleno.TabStop = true;
             this.rdbprepagolleno.Text = "Tanque Lleno";
@@ -84,16 +90,18 @@
             // 
             // dateTimeHora
             // 
-            this.dateTimeHora.Location = new System.Drawing.Point(101, 116);
+            this.dateTimeHora.Location = new System.Drawing.Point(135, 143);
+            this.dateTimeHora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dateTimeHora.Name = "dateTimeHora";
-            this.dateTimeHora.Size = new System.Drawing.Size(200, 20);
+            this.dateTimeHora.Size = new System.Drawing.Size(265, 22);
             this.dateTimeHora.TabIndex = 31;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(22, 372);
+            this.btnGuardar.Location = new System.Drawing.Point(29, 458);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(124, 25);
+            this.btnGuardar.Size = new System.Drawing.Size(165, 31);
             this.btnGuardar.TabIndex = 30;
             this.btnGuardar.Text = "Guardar Datos";
             this.btnGuardar.UseVisualStyleBackColor = true;
@@ -101,51 +109,58 @@
             // 
             // btnRegistro
             // 
-            this.btnRegistro.Location = new System.Drawing.Point(22, 341);
+            this.btnRegistro.Location = new System.Drawing.Point(29, 420);
+            this.btnRegistro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegistro.Name = "btnRegistro";
-            this.btnRegistro.Size = new System.Drawing.Size(124, 25);
+            this.btnRegistro.Size = new System.Drawing.Size(165, 31);
             this.btnRegistro.TabIndex = 29;
             this.btnRegistro.Text = "Agregar Registro";
             this.btnRegistro.UseVisualStyleBackColor = true;
+            this.btnRegistro.Click += new System.EventHandler(this.btnRegistro_Click);
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(101, 77);
+            this.txtNombre.Location = new System.Drawing.Point(135, 95);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(132, 22);
             this.txtNombre.TabIndex = 28;
             // 
             // txtNit
             // 
-            this.txtNit.Location = new System.Drawing.Point(101, 47);
+            this.txtNit.Location = new System.Drawing.Point(135, 58);
+            this.txtNit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNit.Name = "txtNit";
-            this.txtNit.Size = new System.Drawing.Size(100, 20);
+            this.txtNit.Size = new System.Drawing.Size(132, 22);
             this.txtNit.TabIndex = 27;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(22, 263);
+            this.label5.Location = new System.Drawing.Point(29, 324);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(189, 15);
+            this.label5.Size = new System.Drawing.Size(223, 18);
             this.label5.TabIndex = 26;
             this.label5.Text = "Seleccione Método De Pago";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(22, 153);
+            this.label4.Location = new System.Drawing.Point(29, 188);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 13);
+            this.label4.Size = new System.Drawing.Size(111, 16);
             this.label4.TabIndex = 25;
             this.label4.Text = "Tipo de Gasolina";
             // 
             // btnPanel
             // 
-            this.btnPanel.Location = new System.Drawing.Point(395, 315);
+            this.btnPanel.Location = new System.Drawing.Point(527, 388);
+            this.btnPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPanel.Name = "btnPanel";
-            this.btnPanel.Size = new System.Drawing.Size(75, 39);
+            this.btnPanel.Size = new System.Drawing.Size(100, 48);
             this.btnPanel.TabIndex = 23;
             this.btnPanel.Text = "Panel De Control";
             this.btnPanel.UseVisualStyleBackColor = true;
@@ -153,9 +168,10 @@
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(12, 4);
+            this.btnVolver.Location = new System.Drawing.Point(16, 5);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(57, 23);
+            this.btnVolver.Size = new System.Drawing.Size(76, 28);
             this.btnVolver.TabIndex = 22;
             this.btnVolver.Text = "Atras";
             this.btnVolver.UseVisualStyleBackColor = true;
@@ -163,27 +179,30 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 116);
+            this.label3.Location = new System.Drawing.Point(29, 143);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 13);
+            this.label3.Size = new System.Drawing.Size(96, 16);
             this.label3.TabIndex = 21;
             this.label3.Text = "Fecha Y Hora: ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 80);
+            this.label2.Location = new System.Drawing.Point(29, 98);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
+            this.label2.Size = new System.Drawing.Size(59, 16);
             this.label2.TabIndex = 20;
             this.label2.Text = "Nombre:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 54);
+            this.label1.Location = new System.Drawing.Point(29, 66);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(23, 13);
+            this.label1.Size = new System.Drawing.Size(26, 16);
             this.label1.TabIndex = 19;
             this.label1.Text = "Nit:";
             // 
@@ -191,18 +210,21 @@
             // 
             this.groupBox2.Controls.Add(this.rbDiesel);
             this.groupBox2.Controls.Add(this.rbSuper);
-            this.groupBox2.Location = new System.Drawing.Point(22, 184);
+            this.groupBox2.Location = new System.Drawing.Point(29, 226);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(116, 54);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(155, 66);
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             // 
             // rbDiesel
             // 
             this.rbDiesel.AutoSize = true;
-            this.rbDiesel.Location = new System.Drawing.Point(6, 9);
+            this.rbDiesel.Location = new System.Drawing.Point(8, 11);
+            this.rbDiesel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbDiesel.Name = "rbDiesel";
-            this.rbDiesel.Size = new System.Drawing.Size(54, 17);
+            this.rbDiesel.Size = new System.Drawing.Size(67, 20);
             this.rbDiesel.TabIndex = 13;
             this.rbDiesel.TabStop = true;
             this.rbDiesel.Text = "Diesel";
@@ -211,19 +233,24 @@
             // rbSuper
             // 
             this.rbSuper.AutoSize = true;
-            this.rbSuper.Location = new System.Drawing.Point(6, 32);
+            this.rbSuper.Location = new System.Drawing.Point(8, 39);
+            this.rbSuper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbSuper.Name = "rbSuper";
-            this.rbSuper.Size = new System.Drawing.Size(53, 17);
+            this.rbSuper.Size = new System.Drawing.Size(64, 20);
             this.rbSuper.TabIndex = 14;
             this.rbSuper.TabStop = true;
             this.rbSuper.Text = "Super";
             this.rbSuper.UseVisualStyleBackColor = true;
             // 
+            // serialPort1
+            // 
+            this.serialPort1.PortName = "COM3";
+            // 
             // Ingreso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 441);
+            this.ClientSize = new System.Drawing.Size(643, 543);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dateTimeHora);
@@ -239,6 +266,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Ingreso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingreso";
@@ -271,5 +299,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rbDiesel;
         private System.Windows.Forms.RadioButton rbSuper;
+        private System.IO.Ports.SerialPort serialPort1;
     }
 }

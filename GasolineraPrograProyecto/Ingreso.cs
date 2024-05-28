@@ -22,7 +22,7 @@ namespace GasolineraPrograProyecto
         public Ingreso()
         {
             InitializeComponent();
-            serialPort = new SerialPort("COM5", 9600);
+          //  serialPort1.Open();
         }
 
         private void btnPanel_Click(object sender, EventArgs e)
@@ -69,10 +69,10 @@ namespace GasolineraPrograProyecto
         {
             try
             {
-                serialPort.Open();
+                serialPort1.Open();
                 string jsonData = JsonConvert.SerializeObject(dato);
-                serialPort.WriteLine(jsonData);
-                serialPort.Close();
+                serialPort1.WriteLine(jsonData);
+                serialPort1.Close();
             }
             catch (Exception ex)
             {
@@ -86,6 +86,11 @@ namespace GasolineraPrograProyecto
             txtNombre.Text = string.Empty;
 
             txtNit.Focus();
+        }
+
+        private void btnRegistro_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
