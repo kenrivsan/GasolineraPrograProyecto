@@ -88,7 +88,32 @@ namespace GasolineraPrograProyecto
             txtNit.Focus();
         }
 
-        private void btnRegistro_Click(object sender, EventArgs e)
+        private void iconocerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void iconorestaurar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            iconorestaurar.Visible = false;
+            iconomaximizar.Visible = true;
+
+        }
+
+        private void iconominimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void iconomaximizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            iconorestaurar.Visible = true;
+            iconomaximizar.Visible = false;
+        }
+
+        private void btnSolicitar_Click(object sender, EventArgs e)
         {
 
         }
