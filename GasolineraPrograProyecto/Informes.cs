@@ -80,6 +80,8 @@ namespace GasolineraPrograProyecto
             }
         }
 
+
+
         private void button4_Click(object sender, EventArgs e)
         {
 
@@ -110,6 +112,7 @@ namespace GasolineraPrograProyecto
 
         }
 
+
         private void button3_Click(object sender, EventArgs e)
         {
             List<clsDatos> reportespre = new List<clsDatos>();
@@ -134,9 +137,55 @@ namespace GasolineraPrograProyecto
 
             dataGridView2.DataSource = null;
             dataGridView2.DataSource = reportespre;
-            dataGridView2.Refresh();
+            dataGridView2.Refresh();  
+   
 
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            cargarClientes();
+
+            int contadorTanqueLleno = Datoss.Count(p => p.Opcion == "PrepagoLleno");
+            int contadorPrepago = Datoss.Count(p => p.Opcion == "Prepago");
+
+
+            string bombaMasUtilizada;
+            int contador;
+            if (contadorTanqueLleno > contadorPrepago)
+            {
+                bombaMasUtilizada = "Tanque lleno";
+                contador = contadorTanqueLleno;
+            }
+            else if (contadorPrepago > contadorTanqueLleno)
+            {
+                bombaMasUtilizada = "Prepago";
+                contador = contadorPrepago;
+            }
+            else
+            {
+                bombaMasUtilizada = "Se utulizaron la misma cantidad de veces";
+                contador = contadorTanqueLleno; 
+            }
+
+           
+            ConfigurarDataGridView(dataGridView4);
+            LlenarDataGridView(dataGridView4, bombaMasUtilizada, contador);
+        }
+
+        public void ConfigurarDataGridView(DataGridView dataGridView)
+        {
+            dataGridView4.Columns.Clear();
+            dataGridView4.Columns.Add("TipoBomba", "Tipo de Bomba");
+            dataGridView4.Columns.Add("Contador", "Contador");
+        }
+
+        public void LlenarDataGridView(DataGridView dataGridView, string bombaMasUtilizada, int contador)
+        {
+            dataGridView4.Rows.Clear();
+            dataGridView4.Rows.Add(bombaMasUtilizada, contador);
         }
     }
     
