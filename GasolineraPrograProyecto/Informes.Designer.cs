@@ -89,7 +89,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(241, 150);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(561, 249);
@@ -99,7 +99,7 @@
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(241, 517);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.Size = new System.Drawing.Size(561, 261);
@@ -109,7 +109,7 @@
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Location = new System.Drawing.Point(875, 150);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.Size = new System.Drawing.Size(552, 249);
@@ -159,7 +159,7 @@
             this.panel1.Controls.Add(this.btnSolicitar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(221, 854);
             this.panel1.TabIndex = 8;
@@ -168,7 +168,7 @@
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(11, 716);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(64, 54);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -179,7 +179,7 @@
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(11, 337);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(76, 62);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -190,7 +190,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(11, 262);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(76, 68);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -201,7 +201,7 @@
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(-35, -22);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(289, 261);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -217,7 +217,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(95, 337);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 62);
             this.button1.TabIndex = 38;
@@ -234,7 +234,7 @@
             this.btnSolicitar.ForeColor = System.Drawing.Color.White;
             this.btnSolicitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSolicitar.Location = new System.Drawing.Point(95, 262);
-            this.btnSolicitar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSolicitar.Margin = new System.Windows.Forms.Padding(4);
             this.btnSolicitar.Name = "btnSolicitar";
             this.btnSolicitar.Size = new System.Drawing.Size(120, 68);
             this.btnSolicitar.TabIndex = 37;
@@ -257,7 +257,7 @@
             // 
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Location = new System.Drawing.Point(875, 517);
-            this.dataGridView4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView4.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowHeadersWidth = 51;
             this.dataGridView4.Size = new System.Drawing.Size(552, 261);
@@ -267,7 +267,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1435, 647);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 62);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -278,7 +278,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(1435, 716);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(133, 62);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -293,7 +293,7 @@
             this.panel2.Controls.Add(this.iconomaximizar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(221, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1359, 53);
             this.panel2.TabIndex = 13;
@@ -304,7 +304,7 @@
             this.iconocerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconocerrar.Image = ((System.Drawing.Image)(resources.GetObject("iconocerrar.Image")));
             this.iconocerrar.Location = new System.Drawing.Point(1315, 11);
-            this.iconocerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconocerrar.Margin = new System.Windows.Forms.Padding(4);
             this.iconocerrar.Name = "iconocerrar";
             this.iconocerrar.Size = new System.Drawing.Size(32, 31);
             this.iconocerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -318,7 +318,7 @@
             this.iconorestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconorestaurar.Image = ((System.Drawing.Image)(resources.GetObject("iconorestaurar.Image")));
             this.iconorestaurar.Location = new System.Drawing.Point(1275, 11);
-            this.iconorestaurar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconorestaurar.Margin = new System.Windows.Forms.Padding(4);
             this.iconorestaurar.Name = "iconorestaurar";
             this.iconorestaurar.Size = new System.Drawing.Size(32, 31);
             this.iconorestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -333,7 +333,7 @@
             this.iconominimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconominimizar.Image = ((System.Drawing.Image)(resources.GetObject("iconominimizar.Image")));
             this.iconominimizar.Location = new System.Drawing.Point(1235, 11);
-            this.iconominimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconominimizar.Margin = new System.Windows.Forms.Padding(4);
             this.iconominimizar.Name = "iconominimizar";
             this.iconominimizar.Size = new System.Drawing.Size(32, 31);
             this.iconominimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -347,7 +347,7 @@
             this.iconomaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.iconomaximizar.Image = ((System.Drawing.Image)(resources.GetObject("iconomaximizar.Image")));
             this.iconomaximizar.Location = new System.Drawing.Point(1275, 11);
-            this.iconomaximizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconomaximizar.Margin = new System.Windows.Forms.Padding(4);
             this.iconomaximizar.Name = "iconomaximizar";
             this.iconomaximizar.Size = new System.Drawing.Size(32, 31);
             this.iconomaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -364,7 +364,7 @@
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(241, 406);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(113, 62);
             this.button2.TabIndex = 38;
@@ -381,12 +381,13 @@
             this.button3.ForeColor = System.Drawing.Color.Black;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(241, 785);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(113, 62);
             this.button3.TabIndex = 39;
             this.button3.Text = "Mostrar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -397,7 +398,7 @@
             this.button4.ForeColor = System.Drawing.Color.Black;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(875, 406);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(113, 62);
             this.button4.TabIndex = 40;
@@ -414,7 +415,7 @@
             this.button5.ForeColor = System.Drawing.Color.Black;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.Location = new System.Drawing.Point(875, 785);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(113, 62);
             this.button5.TabIndex = 41;
@@ -444,7 +445,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Informes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Informes";
