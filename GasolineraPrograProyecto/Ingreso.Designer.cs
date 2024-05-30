@@ -47,32 +47,37 @@
             this.rbSuper = new System.Windows.Forms.RadioButton();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnInformes = new System.Windows.Forms.Button();
+            this.btnSolicitar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.iconorestaurar = new System.Windows.Forms.PictureBox();
             this.iconominimizar = new System.Windows.Forms.PictureBox();
             this.iconocerrar = new System.Windows.Forms.PictureBox();
             this.iconomaximizar = new System.Windows.Forms.PictureBox();
-            this.btnSolicitar = new System.Windows.Forms.Button();
-            this.btnInformes = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconorestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconominimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconocerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconomaximizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.rdbprepago);
             this.groupBox1.Controls.Add(this.rdbprepagolleno);
-            this.groupBox1.Location = new System.Drawing.Point(193, 274);
+            this.groupBox1.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F);
+            this.groupBox1.Location = new System.Drawing.Point(193, 275);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(116, 54);
             this.groupBox1.TabIndex = 32;
@@ -83,7 +88,7 @@
             this.rdbprepago.AutoSize = true;
             this.rdbprepago.Location = new System.Drawing.Point(6, 9);
             this.rdbprepago.Name = "rdbprepago";
-            this.rdbprepago.Size = new System.Drawing.Size(69, 17);
+            this.rdbprepago.Size = new System.Drawing.Size(86, 23);
             this.rdbprepago.TabIndex = 13;
             this.rdbprepago.TabStop = true;
             this.rdbprepago.Text = "Pre-Pago";
@@ -92,9 +97,9 @@
             // rdbprepagolleno
             // 
             this.rdbprepagolleno.AutoSize = true;
-            this.rdbprepagolleno.Location = new System.Drawing.Point(6, 32);
+            this.rdbprepagolleno.Location = new System.Drawing.Point(6, 31);
             this.rdbprepagolleno.Name = "rdbprepagolleno";
-            this.rdbprepagolleno.Size = new System.Drawing.Size(91, 17);
+            this.rdbprepagolleno.Size = new System.Drawing.Size(110, 23);
             this.rdbprepagolleno.TabIndex = 14;
             this.rdbprepagolleno.TabStop = true;
             this.rdbprepagolleno.Text = "Tanque Lleno";
@@ -102,7 +107,7 @@
             // 
             // dateTimeHora
             // 
-            this.dateTimeHora.Location = new System.Drawing.Point(304, 116);
+            this.dateTimeHora.Location = new System.Drawing.Point(308, 116);
             this.dateTimeHora.Name = "dateTimeHora";
             this.dateTimeHora.Size = new System.Drawing.Size(200, 20);
             this.dateTimeHora.TabIndex = 31;
@@ -110,7 +115,7 @@
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.btnGuardar.Location = new System.Drawing.Point(185, 352);
+            this.btnGuardar.Location = new System.Drawing.Point(192, 335);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(166, 40);
             this.btnGuardar.TabIndex = 30;
@@ -120,14 +125,14 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(265, 85);
+            this.txtNombre.Location = new System.Drawing.Point(269, 85);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 28;
             // 
             // txtNit
             // 
-            this.txtNit.Location = new System.Drawing.Point(265, 55);
+            this.txtNit.Location = new System.Drawing.Point(269, 55);
             this.txtNit.Name = "txtNit";
             this.txtNit.Size = new System.Drawing.Size(100, 20);
             this.txtNit.TabIndex = 27;
@@ -136,7 +141,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(185, 256);
+            this.label5.Location = new System.Drawing.Point(189, 254);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(222, 18);
             this.label5.TabIndex = 26;
@@ -156,7 +161,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label3.Location = new System.Drawing.Point(185, 116);
+            this.label3.Location = new System.Drawing.Point(189, 116);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 20);
             this.label3.TabIndex = 21;
@@ -166,7 +171,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label2.Location = new System.Drawing.Point(185, 87);
+            this.label2.Location = new System.Drawing.Point(189, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 20);
             this.label2.TabIndex = 20;
@@ -176,7 +181,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label1.Location = new System.Drawing.Point(185, 61);
+            this.label1.Location = new System.Drawing.Point(189, 61);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 20);
             this.label1.TabIndex = 19;
@@ -186,9 +191,10 @@
             // 
             this.groupBox2.Controls.Add(this.rbDiesel);
             this.groupBox2.Controls.Add(this.rbSuper);
-            this.groupBox2.Location = new System.Drawing.Point(185, 176);
+            this.groupBox2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(193, 174);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(116, 54);
+            this.groupBox2.Size = new System.Drawing.Size(136, 75);
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             // 
@@ -197,7 +203,7 @@
             this.rbDiesel.AutoSize = true;
             this.rbDiesel.Location = new System.Drawing.Point(6, 9);
             this.rbDiesel.Name = "rbDiesel";
-            this.rbDiesel.Size = new System.Drawing.Size(54, 17);
+            this.rbDiesel.Size = new System.Drawing.Size(65, 23);
             this.rbDiesel.TabIndex = 13;
             this.rbDiesel.TabStop = true;
             this.rbDiesel.Text = "Diesel";
@@ -208,7 +214,7 @@
             this.rbSuper.AutoSize = true;
             this.rbSuper.Location = new System.Drawing.Point(6, 32);
             this.rbSuper.Name = "rbSuper";
-            this.rbSuper.Size = new System.Drawing.Size(53, 17);
+            this.rbSuper.Size = new System.Drawing.Size(64, 23);
             this.rbSuper.TabIndex = 14;
             this.rbSuper.TabStop = true;
             this.rbSuper.Text = "Super";
@@ -220,7 +226,9 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(12)))), ((int)(((byte)(63)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(19)))), ((int)(((byte)(29)))));
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnInformes);
@@ -231,6 +239,58 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(160, 441);
             this.panel1.TabIndex = 34;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(10, 146);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 44);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 38;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(10, 196);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 55);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 36;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnInformes
+            // 
+            this.btnInformes.FlatAppearance.BorderSize = 0;
+            this.btnInformes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInformes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInformes.ForeColor = System.Drawing.Color.White;
+            this.btnInformes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInformes.Location = new System.Drawing.Point(64, 146);
+            this.btnInformes.Name = "btnInformes";
+            this.btnInformes.Size = new System.Drawing.Size(92, 49);
+            this.btnInformes.TabIndex = 36;
+            this.btnInformes.Text = "Informes";
+            this.btnInformes.UseVisualStyleBackColor = true;
+            this.btnInformes.Click += new System.EventHandler(this.btnInformes_Click);
+            // 
+            // btnSolicitar
+            // 
+            this.btnSolicitar.FlatAppearance.BorderSize = 0;
+            this.btnSolicitar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnSolicitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSolicitar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSolicitar.ForeColor = System.Drawing.Color.White;
+            this.btnSolicitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSolicitar.Location = new System.Drawing.Point(65, 196);
+            this.btnSolicitar.Name = "btnSolicitar";
+            this.btnSolicitar.Size = new System.Drawing.Size(91, 55);
+            this.btnSolicitar.TabIndex = 36;
+            this.btnSolicitar.Text = "Menú";
+            this.btnSolicitar.UseVisualStyleBackColor = true;
+            this.btnSolicitar.Click += new System.EventHandler(this.btnSolicitar_Click);
             // 
             // panel2
             // 
@@ -298,56 +358,25 @@
             this.iconomaximizar.TabStop = false;
             this.iconomaximizar.Click += new System.EventHandler(this.iconomaximizar_Click);
             // 
-            // btnSolicitar
+            // pictureBox2
             // 
-            this.btnSolicitar.FlatAppearance.BorderSize = 0;
-            this.btnSolicitar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnSolicitar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSolicitar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSolicitar.ForeColor = System.Drawing.Color.White;
-            this.btnSolicitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSolicitar.Location = new System.Drawing.Point(67, 374);
-            this.btnSolicitar.Name = "btnSolicitar";
-            this.btnSolicitar.Size = new System.Drawing.Size(91, 55);
-            this.btnSolicitar.TabIndex = 36;
-            this.btnSolicitar.Text = "Regresar";
-            this.btnSolicitar.UseVisualStyleBackColor = true;
-            this.btnSolicitar.Click += new System.EventHandler(this.btnSolicitar_Click);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(-15, -15);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(196, 149);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 36;
+            this.pictureBox2.TabStop = false;
             // 
-            // btnInformes
+            // pictureBox4
             // 
-            this.btnInformes.FlatAppearance.BorderSize = 0;
-            this.btnInformes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInformes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInformes.ForeColor = System.Drawing.Color.White;
-            this.btnInformes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInformes.Location = new System.Drawing.Point(66, 324);
-            this.btnInformes.Name = "btnInformes";
-            this.btnInformes.Size = new System.Drawing.Size(92, 49);
-            this.btnInformes.TabIndex = 36;
-            this.btnInformes.Text = "Informes";
-            this.btnInformes.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 374);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 36;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 324);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 44);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 38;
-            this.pictureBox3.TabStop = false;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(12, 385);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(48, 44);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 36;
+            this.pictureBox4.TabStop = false;
             // 
             // Ingreso
             // 
@@ -376,13 +405,15 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconorestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconominimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconocerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconomaximizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -416,5 +447,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnInformes;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
