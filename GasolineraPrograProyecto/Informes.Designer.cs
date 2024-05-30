@@ -48,10 +48,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.iconominimizar = new System.Windows.Forms.PictureBox();
-            this.iconorestaurar = new System.Windows.Forms.PictureBox();
-            this.iconomaximizar = new System.Windows.Forms.PictureBox();
             this.iconocerrar = new System.Windows.Forms.PictureBox();
+            this.iconorestaurar = new System.Windows.Forms.PictureBox();
+            this.iconominimizar = new System.Windows.Forms.PictureBox();
+            this.iconomaximizar = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -64,17 +68,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconominimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconorestaurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconomaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconocerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconorestaurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconominimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconomaximizar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(177, 57);
+            this.label1.Location = new System.Drawing.Point(177, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(90, 23);
             this.label1.TabIndex = 0;
@@ -83,7 +87,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(181, 147);
+            this.dataGridView1.Location = new System.Drawing.Point(181, 122);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(421, 202);
@@ -92,7 +96,7 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(181, 401);
+            this.dataGridView2.Location = new System.Drawing.Point(181, 420);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.Size = new System.Drawing.Size(421, 212);
@@ -101,7 +105,7 @@
             // dataGridView3
             // 
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(656, 147);
+            this.dataGridView3.Location = new System.Drawing.Point(656, 122);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.Size = new System.Drawing.Size(414, 202);
@@ -111,7 +115,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label2.Location = new System.Drawing.Point(177, 367);
+            this.label2.Location = new System.Drawing.Point(177, 386);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(211, 20);
             this.label2.TabIndex = 4;
@@ -121,7 +125,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label3.Location = new System.Drawing.Point(177, 109);
+            this.label3.Location = new System.Drawing.Point(177, 93);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(139, 20);
             this.label3.TabIndex = 5;
@@ -131,7 +135,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label4.Location = new System.Drawing.Point(652, 109);
+            this.label4.Location = new System.Drawing.Point(652, 93);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(244, 20);
             this.label4.TabIndex = 6;
@@ -149,7 +153,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(166, 638);
+            this.panel1.Size = new System.Drawing.Size(166, 694);
             this.panel1.TabIndex = 8;
             // 
             // pictureBox5
@@ -228,7 +232,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label5.Location = new System.Drawing.Point(652, 367);
+            this.label5.Location = new System.Drawing.Point(652, 386);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 20);
             this.label5.TabIndex = 10;
@@ -237,7 +241,7 @@
             // dataGridView4
             // 
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(656, 401);
+            this.dataGridView4.Location = new System.Drawing.Point(656, 420);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowHeadersWidth = 51;
             this.dataGridView4.Size = new System.Drawing.Size(414, 212);
@@ -246,7 +250,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1076, 507);
+            this.pictureBox1.Location = new System.Drawing.Point(1076, 526);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -256,7 +260,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1076, 563);
+            this.pictureBox2.Location = new System.Drawing.Point(1076, 582);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 50);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -275,18 +279,18 @@
             this.panel2.Size = new System.Drawing.Size(1019, 43);
             this.panel2.TabIndex = 13;
             // 
-            // iconominimizar
+            // iconocerrar
             // 
-            this.iconominimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconominimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconominimizar.Image = ((System.Drawing.Image)(resources.GetObject("iconominimizar.Image")));
-            this.iconominimizar.Location = new System.Drawing.Point(926, 9);
-            this.iconominimizar.Name = "iconominimizar";
-            this.iconominimizar.Size = new System.Drawing.Size(24, 25);
-            this.iconominimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconominimizar.TabIndex = 42;
-            this.iconominimizar.TabStop = false;
-            this.iconominimizar.Click += new System.EventHandler(this.iconominimizar_Click);
+            this.iconocerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconocerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconocerrar.Image = ((System.Drawing.Image)(resources.GetObject("iconocerrar.Image")));
+            this.iconocerrar.Location = new System.Drawing.Point(986, 9);
+            this.iconocerrar.Name = "iconocerrar";
+            this.iconocerrar.Size = new System.Drawing.Size(24, 25);
+            this.iconocerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconocerrar.TabIndex = 41;
+            this.iconocerrar.TabStop = false;
+            this.iconocerrar.Click += new System.EventHandler(this.iconocerrar_Click);
             // 
             // iconorestaurar
             // 
@@ -302,6 +306,19 @@
             this.iconorestaurar.Visible = false;
             this.iconorestaurar.Click += new System.EventHandler(this.iconorestaurar_Click);
             // 
+            // iconominimizar
+            // 
+            this.iconominimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconominimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconominimizar.Image = ((System.Drawing.Image)(resources.GetObject("iconominimizar.Image")));
+            this.iconominimizar.Location = new System.Drawing.Point(926, 9);
+            this.iconominimizar.Name = "iconominimizar";
+            this.iconominimizar.Size = new System.Drawing.Size(24, 25);
+            this.iconominimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconominimizar.TabIndex = 42;
+            this.iconominimizar.TabStop = false;
+            this.iconominimizar.Click += new System.EventHandler(this.iconominimizar_Click);
+            // 
             // iconomaximizar
             // 
             this.iconomaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -315,24 +332,75 @@
             this.iconomaximizar.TabStop = false;
             this.iconomaximizar.Click += new System.EventHandler(this.iconomaximizar_Click);
             // 
-            // iconocerrar
+            // button2
             // 
-            this.iconocerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconocerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconocerrar.Image = ((System.Drawing.Image)(resources.GetObject("iconocerrar.Image")));
-            this.iconocerrar.Location = new System.Drawing.Point(986, 9);
-            this.iconocerrar.Name = "iconocerrar";
-            this.iconocerrar.Size = new System.Drawing.Size(24, 25);
-            this.iconocerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconocerrar.TabIndex = 41;
-            this.iconocerrar.TabStop = false;
-            this.iconocerrar.Click += new System.EventHandler(this.iconocerrar_Click);
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(181, 330);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(85, 50);
+            this.button2.TabIndex = 38;
+            this.button2.Text = "Mostrar";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(181, 638);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(85, 50);
+            this.button3.TabIndex = 39;
+            this.button3.Text = "Mostrar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(656, 330);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(85, 50);
+            this.button4.TabIndex = 40;
+            this.button4.Text = "Mostrar";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(656, 638);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(85, 50);
+            this.button5.TabIndex = 41;
+            this.button5.Text = "Mostrar";
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // Informes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1185, 638);
+            this.ClientSize = new System.Drawing.Size(1185, 694);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -362,10 +430,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconominimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconorestaurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconomaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconocerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconorestaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconominimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconomaximizar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,5 +464,9 @@
         private System.Windows.Forms.PictureBox iconorestaurar;
         private System.Windows.Forms.PictureBox iconomaximizar;
         private System.Windows.Forms.PictureBox iconocerrar;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
