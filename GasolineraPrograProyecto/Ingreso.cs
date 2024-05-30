@@ -38,20 +38,20 @@ namespace GasolineraPrograProyecto
             dato.Fecha = dateTimeHora.Value;
             if (rbDiesel.Checked)
             {
-                dato.Opcion = "Diesel";
+                dato.Tipogasolina = "Diesel";
             }
             else if (rbSuper.Checked)
             {
-                dato.Opcion = "Super";
+                dato.Tipogasolina = "Super";
             }
             if (rdbprepago.Checked)
             {
-                dato.Tipogasolina = "Prepago";
+                dato.Opcion = "Prepago";
                 dato.CantidadPedida = decimal.Parse(Interaction.InputBox("Ingrese la cantidad en Q "));
             }
             else if (rdbprepagolleno.Checked)
             {
-                dato.Tipogasolina = "PrepagoLleno";
+                dato.Opcion = "PrepagoLleno";
                 
             }
             datos.Add(dato);
@@ -126,8 +126,6 @@ namespace GasolineraPrograProyecto
             Informes FormInformes = new Informes();
             FormInformes.Show();
             this.Hide();
-           
-
         }
     }
 }

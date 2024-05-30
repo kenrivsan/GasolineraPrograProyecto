@@ -71,13 +71,6 @@ namespace GasolineraPrograProyecto
 
         void cargarClientes()
         {
-            //    string archivo = "Datos.json";
-            //    StreamReader jsonStream = File.OpenText(archivo);
-            //    string json = jsonStream.ReadToEnd();
-
-            //    jsonStream.Close();
-            //    Datoss = JsonConvert.DeserializeObject<List<clsDatos>>(json)
-            //    ;
             string archivo = "Datos.json";
 
             using (StreamReader jsonStream = File.OpenText(archivo))
