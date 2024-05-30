@@ -115,6 +115,18 @@ namespace GasolineraPrograProyecto
 
         private void btnSolicitar_Click(object sender, EventArgs e)
         {
+            Form1 Menu = new Form1();
+            Menu.Show();
+            this.Hide();
+        }
+
+        private void btnInformes_Click(object sender, EventArgs e)
+        {
+
+            Informes FormInformes = new Informes();
+            FormInformes.Show();
+            this.Hide();
+           
 
         }
     }
