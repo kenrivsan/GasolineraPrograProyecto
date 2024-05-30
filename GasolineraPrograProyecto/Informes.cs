@@ -54,5 +54,6 @@ namespace GasolineraPrograProyecto
             FormIngreso.Show();
             this.Hide();
         }
+
     }
 }
