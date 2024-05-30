@@ -61,7 +61,7 @@ namespace GasolineraPrograProyecto
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string fileJSon = File.ReadAllText(@"C:\Users\user\source\repos\GasolineraPrograProyecto\GasolineraPrograProyecto\bin\Debug\Datos.json");
+            string fileJSon = File.ReadAllText(@"C:\Users\Julian Vg\source\repos\GasolineraPrograProyecto\GasolineraPrograProyecto\bin\Debug\Datos.json");
             DataTable dt = (DataTable)JsonConvert.DeserializeObject(fileJSon,typeof(DataTable));
             dataGridView1.DataSource = dt;
 
@@ -73,23 +73,23 @@ namespace GasolineraPrograProyecto
         {
             string archivo = "Datos.json";
 
-            StreamReader jsonStream = File.OpenText(archivo);
-
-            
-            string json = jsonStream.ReadToEnd();
-
-            jsonStream.Close();
-
-            
-            Datoss = JsonConvert.DeserializeObject<List<clsDatos>>(json);
+            using (StreamReader jsonStream = File.OpenText(archivo))
+            {
+                string json = jsonStream.ReadToEnd();
+                Datoss = JsonConvert.DeserializeObject<List<clsDatos>>(json);
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            cargarClientes();
-            clsDatos tanquelleno = Datoss.FirstOrDefault(p => p.Opcion == tanquelleno.Opcion);
 
-            if (Datoss != null)
+            List<clsDatos> reportes = new List<clsDatos>();
+
+            cargarClientes();
+            string busqueda = "Lleno";
+            clsDatos tanquelleno = Datoss.FirstOrDefault(p => p.Opcion == busqueda);
+
+            if (tanquelleno != null)
             {
                 clsDatos reporte = new clsDatos
                 {
@@ -100,17 +100,20 @@ namespace GasolineraPrograProyecto
                     Tipogasolina = tanquelleno.Tipogasolina,
 
                 };
-                Datoss.Add(reporte);
+                reportes.Add(reporte);
             }
 
             dataGridView3.DataSource = null;
-            dataGridView3.DataSource = Datoss;
+            dataGridView3.DataSource = reportes;
             dataGridView3.Refresh();
 
 
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
 
+        }
     }
     
 }
