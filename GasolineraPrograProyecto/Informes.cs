@@ -148,44 +148,46 @@ namespace GasolineraPrograProyecto
 
             cargarClientes();
 
-            int contadorTanqueLleno = Datoss.Count(p => p.Opcion == "PrepagoLleno");
-            int contadorPrepago = Datoss.Count(p => p.Opcion == "Prepago");
+            // Contadores para los tipos de gasolina
+            int contadorSuper = Datoss.Count(p => p.Tipogasolina == "Super");
+            int contadorDiesel = Datoss.Count(p => p.Tipogasolina == "Diesel");
 
-
-            string bombaMasUtilizada;
+            // Determinar cuál tipo de gasolina se utilizó más
+            string tipoGasolinaMasUtilizada;
             int contador;
-            if (contadorTanqueLleno > contadorPrepago)
+            if (contadorSuper > contadorDiesel)
             {
-                bombaMasUtilizada = "Tanque lleno";
-                contador = contadorTanqueLleno;
+                tipoGasolinaMasUtilizada = "Super";
+                contador = contadorSuper;
             }
-            else if (contadorPrepago > contadorTanqueLleno)
+            else if (contadorDiesel > contadorSuper)
             {
-                bombaMasUtilizada = "Prepago";
-                contador = contadorPrepago;
+                tipoGasolinaMasUtilizada = "Diesel";
+                contador = contadorDiesel;
             }
             else
             {
-                bombaMasUtilizada = "Se utulizaron la misma cantidad de veces";
-                contador = contadorTanqueLleno; 
+                tipoGasolinaMasUtilizada = "Ambos tipos de gasolina se utilizaron la misma cantidad de veces";
+                contador = contadorSuper; // Puede ser cualquiera ya que son iguales
             }
 
-           
+            // Configurar y llenar el DataGridView con los resultados
             ConfigurarDataGridView(dataGridView4);
-            LlenarDataGridView(dataGridView4, bombaMasUtilizada, contador);
+            LlenarDataGridView(dataGridView4, tipoGasolinaMasUtilizada, contador);
         }
 
+        // Métodos para configurar y llenar el DataGridView
         public void ConfigurarDataGridView(DataGridView dataGridView)
         {
             dataGridView4.Columns.Clear();
-            dataGridView4.Columns.Add("TipoBomba", "Tipo de Bomba");
+            dataGridView4.Columns.Add("TipoGasolina", "Tipo de Gasolina");
             dataGridView4.Columns.Add("Contador", "Contador");
         }
 
-        public void LlenarDataGridView(DataGridView dataGridView, string bombaMasUtilizada, int contador)
+        public void LlenarDataGridView(DataGridView dataGridView, string tipoGasolina, int contador)
         {
             dataGridView4.Rows.Clear();
-            dataGridView4.Rows.Add(bombaMasUtilizada, contador);
+            dataGridView4.Rows.Add(tipoGasolina, contador);
         }
     }
     
