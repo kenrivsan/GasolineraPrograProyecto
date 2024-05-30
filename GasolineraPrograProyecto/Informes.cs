@@ -86,7 +86,7 @@ namespace GasolineraPrograProyecto
             List<clsDatos> reportes = new List<clsDatos>();
 
             cargarClientes();
-            string busqueda = "Lleno";
+            string busqueda = "PrepagoLleno";
             clsDatos tanquelleno = Datoss.FirstOrDefault(p => p.Opcion == busqueda);
 
             if (tanquelleno != null)
