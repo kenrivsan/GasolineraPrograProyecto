@@ -112,8 +112,33 @@ namespace GasolineraPrograProyecto
 
         private void button3_Click(object sender, EventArgs e)
         {
+            List<clsDatos> reportespre = new List<clsDatos>();
+
+            cargarClientes();
+            string busqueda = "Prepago";
+            clsDatos Prepago = Datoss.FirstOrDefault(p => p.Opcion == busqueda);
+
+            if (Prepago != null)
+            {
+                clsDatos reporte = new clsDatos
+                {
+                    Nit = Prepago.Nit,
+                    Nombre = Prepago.Nombre,
+                    Fecha = Prepago.Fecha,
+                    Opcion = Prepago.Opcion,
+                    Tipogasolina = Prepago.Tipogasolina,
+
+                };
+                reportespre.Add(reporte);
+            }
+
+            dataGridView2.DataSource = null;
+            dataGridView2.DataSource = reportespre;
+            dataGridView2.Refresh();
+
 
         }
     }
+    
     
 }
