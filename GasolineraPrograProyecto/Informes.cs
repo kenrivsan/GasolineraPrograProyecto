@@ -84,10 +84,8 @@ namespace GasolineraPrograProyecto
 
         private void button4_Click(object sender, EventArgs e)
         {
-
-            List<clsDatos> reportes = new List<clsDatos>();
-
             cargarClientes();
+            List<clsDatos> reportes = new List<clsDatos>();
             string busqueda = "PrepagoLleno";
             clsDatos tanquelleno = Datoss.FirstOrDefault(p => p.Opcion == busqueda);
 
@@ -116,9 +114,9 @@ namespace GasolineraPrograProyecto
 
         private void button3_Click(object sender, EventArgs e)
         {
-            List<clsDatos> reportespre = new List<clsDatos>();
-
+           
             cargarClientes();
+            List<clsDatos> reportespre = new List<clsDatos>();
             string busqueda = "Prepago";
             clsDatos Prepago = Datoss.FirstOrDefault(p => p.Opcion == busqueda);
 
@@ -181,6 +179,7 @@ namespace GasolineraPrograProyecto
             dataGridView4.Columns.Clear();
             dataGridView4.Columns.Add("TipoGasolina", "Tipo de Gasolina");
             dataGridView4.Columns.Add("Ventas realizadas", "Ventas realizadas");
+            dataGridView4.Columns.Add("Cantidad servida", "Cantidad servida");
         }
 
         public void LlenarDataGridView(DataGridView dataGridView, string tipoGasolina, int contador)
