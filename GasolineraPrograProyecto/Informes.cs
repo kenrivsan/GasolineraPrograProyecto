@@ -100,6 +100,7 @@ namespace GasolineraPrograProyecto
                     Fecha = tanquelleno.Fecha,
                     Opcion =tanquelleno.Opcion,
                     Tipogasolina = tanquelleno.Tipogasolina,
+                    CantidadServida = tanquelleno.CantidadServida,
 
                 };
                 reportes.Add(reporte);
@@ -148,11 +149,11 @@ namespace GasolineraPrograProyecto
 
             cargarClientes();
 
-            // Contadores para los tipos de gasolina
+          
             int contadorSuper = Datoss.Count(p => p.Tipogasolina == "Super");
             int contadorDiesel = Datoss.Count(p => p.Tipogasolina == "Diesel");
 
-            // Determinar cuál tipo de gasolina se utilizó más
+           
             string tipoGasolinaMasUtilizada;
             int contador;
             if (contadorSuper > contadorDiesel)
@@ -168,20 +169,18 @@ namespace GasolineraPrograProyecto
             else
             {
                 tipoGasolinaMasUtilizada = "Ambos tipos de gasolina se utilizaron la misma cantidad de veces";
-                contador = contadorSuper; // Puede ser cualquiera ya que son iguales
+                contador = contadorSuper; 
             }
 
-            // Configurar y llenar el DataGridView con los resultados
             ConfigurarDataGridView(dataGridView4);
             LlenarDataGridView(dataGridView4, tipoGasolinaMasUtilizada, contador);
         }
 
-        // Métodos para configurar y llenar el DataGridView
         public void ConfigurarDataGridView(DataGridView dataGridView)
         {
             dataGridView4.Columns.Clear();
             dataGridView4.Columns.Add("TipoGasolina", "Tipo de Gasolina");
-            dataGridView4.Columns.Add("Contador", "Contador");
+            dataGridView4.Columns.Add("Ventas realizadas", "Ventas realizadas");
         }
 
         public void LlenarDataGridView(DataGridView dataGridView, string tipoGasolina, int contador)
@@ -189,7 +188,33 @@ namespace GasolineraPrograProyecto
             dataGridView4.Rows.Clear();
             dataGridView4.Rows.Add(tipoGasolina, contador);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            cargarClientes();
+
+            var datosOrdenados = Datoss.OrderBy(p => p.Tipogasolina).ToList();
+
+            dataGridView4.DataSource = null;
+            dataGridView4.DataSource = datosOrdenados;
+            dataGridView4.Refresh();
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            var datosActuales = (List<clsDatos>)dataGridView4.DataSource;
+
+
+            var datosOrdenados = datosActuales.OrderByDescending(p => p.Tipogasolina).ToList();
+
+            dataGridView4.DataSource = null;
+            dataGridView4.DataSource = datosOrdenados;
+            dataGridView4.Refresh();
+        }
     }
+    
+    
     
     
 }
